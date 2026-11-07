@@ -1,0 +1,549 @@
+[v1-multi]
+PASS
+Studio ready, Unity 5.6.2f1, game 1.0
+IKTHIS real Option button registered
+Rope This 1.1.3 real Option button present independently
+Timeline native tracks ready 1.5.6.0
+Same named item resolved by Sideloader
+Same named item real FK prefab
+Same named item resolved by Sideloader
+Same named item real FK prefab
+Selecting another item switches the open panel even during an automatic preview
+Each identically named item retains its own automatic preview without creating keys
+Leaving a manual draft displays the other item's own preview
+Returning to the first item restores its first manual click
+Returning to the second item restores its independent second manual click
+Two identical bone hierarchies own separate red/blue guides and six initial channels
+Clicking a helper activates its owning item's panel
+Moving one item's IK leaves the other item's pose and live solver unchanged
+Automatic keying records only the manipulated item's channel
+Keying the second item keeps the first item's existing key object
+Scrubbing animates both independent IK items while only one is active
+The last clicked item is active during native multiple selection
+An inactive item's stale marker cannot capture a click
+Selecting an unrelated object clears the panel target while both items keep animating
+Disabling one item does not disable the other
+Native Studio scene save v1-multiple-items.png
+
+[v1-reduction]
+PASS
+Studio ready, Unity 5.6.2f1, game 1.0
+IKTHIS real Option button registered
+Rope This 1.1.3 real Option button present independently
+Timeline native tracks ready 1.5.6.0
+Reduction preserves interval boundaries on channel 0
+Reduction preserves interval boundaries on channel 1
+Reduction retains a one-frame position impulse
+Reduction preserves interval boundaries on channel 2
+Identical rotations including opposite quaternion signs retain two keys
+Precise reduction preserves smooth motion and sharp changes; 363 -> 104 keys, angle 0.01956052, position 4.786719E-05
+Reduction preserves interval boundaries on channel 0
+Reduction preserves interval boundaries on channel 1
+Reduction retains a one-frame position impulse
+Reduction preserves interval boundaries on channel 2
+Identical rotations including opposite quaternion signs retain two keys
+Standard reduction preserves smooth motion and sharp changes; 363 -> 54 keys, angle 0.07692217, position 0.0001910105
+Reduction preserves interval boundaries on channel 0
+Reduction preserves interval boundaries on channel 1
+Reduction retains a one-frame position impulse
+Reduction preserves interval boundaries on channel 2
+Identical rotations including opposite quaternion signs retain two keys
+Compact reduction preserves smooth motion and sharp changes; 363 -> 33 keys, angle 0.2321779, position 0.000490373
+The three quality settings offer progressively smaller output
+
+[user-compact]
+PASS
+Studio ready, Unity 5.6.2f1, game 1.0
+IKTHIS real Option button registered
+Rope This 1.1.3 real Option button present independently
+Timeline native tracks ready 1.5.6.0
+The provided user scene opens
+Geovishap loads with its original FK hierarchy
+All five original live rigs restore, including the two constrained red hands
+The observed bake completes and restores the 0.72-second cursor; 配布用に確定しました。標準FK 3824 キーを追加し、IK同期を解除しました。（軽量化 4913 → 3824、22.2%削減）Studioでシーンを保存してください。
+The completed bake reports fewer output keys than per-frame sampling: 4913 -> 3824
+Share finalization removes only IKTHIS guides and retains both other objects; 配布用に確定しました。標準FK 3824 キーを追加し、IK同期を解除しました。（軽量化 4913 → 3824、22.2%削減）Studioでシーンを保存してください。
+All 65 unrelated or independent FK tracks and their 949 original keys are retained
+The original Geovishap prefab and its 46 FK bones are present
+Unconstrained FK bones match the live source; position error 0.00264827, rotation error 0.3403484
+The baked scene naturally plays native FK; maximum FK application error 0.05595291
+All five original constraints remain; two drive the actual hand bones
+Natural playback across the full clip keeps both hands attached without relative shaking; frames 4067, contact error 8.845898E-07, relative step 1.068113E-06, angle error 0.05595291
+Native Studio scene save user-compact.png
+
+[user-bake]
+PASS
+Studio ready, Unity 5.6.2f1, game 1.0
+IKTHIS real Option button registered
+Rope This 1.1.3 real Option button present independently
+Timeline native tracks ready 1.5.6.0
+The provided user scene opens
+Geovishap loads with its original FK hierarchy
+All five original live rigs restore, including the two constrained red hands
+The observed bake completes and restores the 0.72-second cursor; 配布用に確定しました。標準FK 4415 キーを追加し、IK同期を解除しました。（軽量化 4913 → 4415、10.1%削減）Studioでシーンを保存してください。
+The completed bake reports fewer output keys than per-frame sampling: 4913 -> 4415
+Share finalization removes only IKTHIS guides and retains both other objects; 配布用に確定しました。標準FK 4415 キーを追加し、IK同期を解除しました。（軽量化 4913 → 4415、10.1%削減）Studioでシーンを保存してください。
+All 65 unrelated or independent FK tracks and their 949 original keys are retained
+The original Geovishap prefab and its 46 FK bones are present
+Unconstrained FK bones match the live source; position error 0.000875528, rotation error 0.05595291
+The baked scene naturally plays native FK; maximum FK application error 0.05595291
+All five original constraints remain; two drive the actual hand bones
+Natural playback across the full clip keeps both hands attached without relative shaking; frames 4175, contact error 8.360684E-07, relative step 9.220075E-07, angle error 0
+Native Studio scene save user-shared.png
+
+[user-selected]
+PASS
+Studio ready, Unity 5.6.2f1, game 1.0
+IKTHIS real Option button registered
+Rope This 1.1.3 real Option button present independently
+Timeline native tracks ready 1.5.6.0
+The provided user scene opens
+Geovishap loads with its original FK hierarchy
+All five original live rigs restore, including the two constrained red hands
+The observed bake completes and restores the 0.72-second cursor; 標準FKへ 4415 キーを焼き込み、ライブIKを停止しました。（軽量化 4913 → 4415、10.1%削減）
+The completed bake reports fewer output keys than per-frame sampling: 4913 -> 4415
+Selected-item bake succeeds on both linked hands and the other three parts
+All 65 unrelated or independent FK tracks and their 949 original keys are retained
+The original Geovishap prefab and its 46 FK bones are present
+Unconstrained FK bones match the live source; position error 0.000875528, rotation error 0.05595291
+The baked scene naturally plays native FK; maximum FK application error 0.05595291
+All five original constraints remain; two drive the actual hand bones
+Natural playback across the full clip keeps both hands attached without relative shaking; frames 4157, contact error 8.551063E-07, relative step 1.002428E-06, angle error 0.05595291
+Native Studio scene save user-selected.png
+
+[user-node-edit]
+PASS
+Studio ready, Unity 5.6.2f1, game 1.0
+IKTHIS real Option button registered
+Rope This 1.1.3 real Option button present independently
+Timeline native tracks ready 1.5.6.0
+The provided user scene opens
+Geovishap loads with its original FK hierarchy
+Saved authoring data restores both transferred constraint bindings
+Re-enabling moves the original constraints back to the IK guides and releases their bone offsets
+Returning to IK restores the original hand bone length
+Returning to IK restores the original hand bone length
+Baking again transfers both links to the hand bones
+Duplicating the item together with its constraint source gives the copy its own two bone constraints
+The duplicate follows its copied character rather than the original character
+
+[user-reload]
+PASS
+Studio ready, Unity 5.6.2f1, game 1.0
+IKTHIS real Option button registered
+Rope This 1.1.3 real Option button present independently
+Timeline native tracks ready 1.5.6.0
+The provided user scene opens
+Geovishap loads with its original FK hierarchy
+Reloaded share retains both other objects and has no IKTHIS helpers
+The original Geovishap prefab and its 46 FK bones are present
+Unconstrained FK bones match the live source; position error 0.000875528, rotation error 0.05595291
+The baked scene naturally plays native FK; maximum FK application error 0.05595291
+All five original constraints remain; two drive the actual hand bones
+Natural playback across the full clip keeps both hands attached without relative shaking; frames 4191, contact error 8.703557E-07, relative step 9.351592E-07, angle error 0
+
+[user-independent]
+PASS
+Studio ready, Unity 5.6.2f1, game 1.0
+GIN IKTHIS absent at startup
+User baked scene opens without IKTHIS
+The original Geovishap prefab and its 46 FK bones are present
+Unconstrained FK bones match the live source; position error 0.000875528, rotation error 0.05595291
+The baked scene naturally plays native FK; maximum FK application error 0.05595291
+All five original constraints remain; two drive the actual hand bones
+Natural playback across the full clip keeps both hands attached without relative shaking; frames 4230, contact error 8.605844E-07, relative step 9.357229E-07, angle error 0.03956468
+
+[user-transfer-rollback]
+PASS
+Studio ready, Unity 5.6.2f1, game 1.0
+IKTHIS real Option button registered
+Rope This 1.1.3 real Option button present independently
+Timeline native tracks ready 1.5.6.0
+The provided user scene opens
+Geovishap loads with its original FK hierarchy
+All five original live rigs restore, including the two constrained red hands
+Both incoming links are present before the fault test
+A failure on the second link rolls back both transferred links, all output tracks and rig states
+
+[user-cancel]
+PASS
+Studio ready, Unity 5.6.2f1, game 1.0
+IKTHIS real Option button registered
+Rope This 1.1.3 real Option button present independently
+Timeline native tracks ready 1.5.6.0
+The provided user scene opens
+Geovishap loads with its original FK hierarchy
+All five original live rigs restore, including the two constrained red hands
+Canceling observation preserves all original tracks, guides, live rigs and the cursor
+
+[user-modify]
+PASS
+Studio ready, Unity 5.6.2f1, game 1.0
+IKTHIS real Option button registered
+Rope This 1.1.3 real Option button present independently
+Timeline native tracks ready 1.5.6.0
+The provided user scene opens
+Geovishap loads with its original FK hierarchy
+All five original live rigs restore, including the two constrained red hands
+Canceling observation preserves all original tracks, guides, live rigs and the cursor
+Changing an input key aborts the bake and preserves the user's changed key
+
+[user-fk-only]
+PASS
+Studio ready, Unity 5.6.2f1, game 1.0
+IKTHIS real Option button registered
+Rope This 1.1.3 real Option button present independently
+Timeline native tracks ready 1.5.6.0
+The provided user scene opens
+Geovishap loads with its original FK hierarchy
+All five original live rigs restore, including the two constrained red hands
+The observed bake completes and restores the 0.72-second cursor; 配布用に確定しました。標準FK 4415 キーを追加し、IK同期を解除しました。（軽量化 4913 → 4415、10.1%削減）Studioでシーンを保存してください。
+The completed bake reports fewer output keys than per-frame sampling: 4913 -> 4415
+Share finalization removes only IKTHIS guides and retains both other objects; 配布用に確定しました。標準FK 4415 キーを追加し、IK同期を解除しました。（軽量化 4913 → 4415、10.1%削減）Studioでシーンを保存してください。
+All 65 unrelated or independent FK tracks and their 949 original keys are retained
+The original Geovishap prefab and its 46 FK bones are present
+Unconstrained FK bones match the live source; position error 0.000875528, rotation error 0.05595291
+The baked scene naturally plays native FK; maximum FK application error 0.05595291
+Native Studio scene save user-fk-only.png
+
+[root]
+PASS
+Studio ready, Unity 5.6.2f1, game 1.0
+IKTHIS real Option button registered
+Rope This 1.1.3 real Option button present independently
+Timeline native tracks ready 1.5.6.0
+Hilichurl resolved by Sideloader
+Hilichurl real FK prefab
+Adding a movement-only guide keeps the pose, red/blue keys, item hierarchy and cursor; only one zero key is added
+Reconfirming reuses the same green guide, track and existing zero key
+The green control is visible on selection with the IKTHIS window closed
+The green marker activates standard translation axes in one click
+Native move and autokey shift the root, retain bone length and hold the reachable red pin
+Scrubbing the position track interpolates the actual parent bone
+The green guide follows a moving ancestor while the red pin remains in world space
+Reset restores the original root position without changing keys when autokey is off
+Native Studio scene save root-editing.png
+Sharing writes KKPE position plus standard FK and removes every IK helper
+Native Studio scene save root-shared.png
+
+[root-observed]
+PASS
+Studio ready, Unity 5.6.2f1, game 1.0
+IKTHIS real Option button registered
+Rope This 1.1.3 real Option button present independently
+Timeline native tracks ready 1.5.6.0
+Hilichurl resolved by Sideloader
+Hilichurl real FK prefab
+Adding a movement-only guide keeps the pose, red/blue keys, item hierarchy and cursor; only one zero key is added
+Reconfirming reuses the same green guide, track and existing zero key
+The green control is visible on selection with the IKTHIS window closed
+The green marker activates standard translation axes in one click
+Native move and autokey shift the root, retain bone length and hold the reachable red pin
+Scrubbing the position track interpolates the actual parent bone
+The green guide follows a moving ancestor while the red pin remains in world space
+Reset restores the original root position without changing keys when autokey is off
+Native Studio scene save root-editing.png
+Sharing writes KKPE position plus standard FK and removes every IK helper
+Native Studio scene save root-shared.png
+
+[root-reload]
+PASS
+Studio ready, Unity 5.6.2f1, game 1.0
+IKTHIS real Option button registered
+Rope This 1.1.3 real Option button present independently
+Timeline native tracks ready 1.5.6.0
+Edited root scene reopens
+Root guide and the collapsed item-owned group are restored
+Reloaded Timeline drives the root in parent coordinates while retaining the red pin
+Disabling a restored root releases its positional offset
+Duplicating binds the green guide to the new item's bone and copies its own Timeline track
+Moving the duplicate root leaves the source root untouched
+Root scene imports through Studio
+Each imported or duplicated root uses its owning item's parent coordinates
+Each imported or duplicated root uses its owning item's parent coordinates
+Each imported or duplicated root uses its owning item's parent coordinates
+Import and duplication keep three independent root controls
+
+[root-shared]
+PASS
+Studio ready, Unity 5.6.2f1, game 1.0
+GIN IKTHIS absent at startup
+Translated-root scene opens without IKTHIS
+Only the item remains; KKPE resolves the serialized Bone Position track
+Scrubbing moves the root while the baked tip stays planted; displacement 0.022, tip error 1.788139E-07
+Natural playback animates bone translation and standard FK together; maximum tip error 7.819423E-05
+
+[root-no-kkpe]
+PASS
+Studio ready, Unity 5.6.2f1, game 1.0
+IKTHIS real Option button registered
+Rope This 1.1.3 real Option button present independently
+Timeline native tracks ready 1.5.6.0
+Hilichurl resolved by Sideloader
+Hilichurl real FK prefab
+Adding a movement-only guide keeps the pose, red/blue keys, item hierarchy and cursor; only one zero key is added
+Reconfirming reuses the same green guide, track and existing zero key
+The green control is visible on selection with the IKTHIS window closed
+The green marker activates standard translation axes in one click
+Native move and autokey shift the root, retain bone length and hold the reachable red pin
+Scrubbing the position track interpolates the actual parent bone
+Without KKPE, live root translation works and sharing safely keeps the source intact
+
+[root-kkpe-disabled]
+PASS
+Studio ready, Unity 5.6.2f1, game 1.0
+IKTHIS real Option button registered
+Rope This 1.1.3 real Option button present independently
+Timeline native tracks ready 1.5.6.0
+Hilichurl resolved by Sideloader
+Hilichurl real FK prefab
+Adding a movement-only guide keeps the pose, red/blue keys, item hierarchy and cursor; only one zero key is added
+Reconfirming reuses the same green guide, track and existing zero key
+The green control is visible on selection with the IKTHIS window closed
+The green marker activates standard translation axes in one click
+Native move and autokey shift the root, retain bone length and hold the reachable red pin
+Scrubbing the position track interpolates the actual parent bone
+Fixture keeps an existing KKPE bone edit disabled
+The bake preserves dormant unrelated KKPE edits and commits no partial keys
+
+[root-kohola]
+PASS
+Studio ready, Unity 5.6.2f1, game 1.0
+IKTHIS real Option button registered
+Rope This 1.1.3 real Option button present independently
+Timeline native tracks ready 1.5.6.0
+Creature - Koholasaurus resolved by Sideloader
+Creature - Koholasaurus real FK prefab
+Adding a movement-only guide keeps the pose, red/blue keys, item hierarchy and cursor; only one zero key is added
+Reconfirming reuses the same green guide, track and existing zero key
+The green control is visible on selection with the IKTHIS window closed
+The green marker activates standard translation axes in one click
+Native move and autokey shift the root, retain bone length and hold the reachable red pin
+Scrubbing the position track interpolates the actual parent bone
+The green guide follows a moving ancestor while the red pin remains in world space
+Reset restores the original root position without changing keys when autokey is off
+Native Studio scene save root-kohola-editing.png
+Sharing writes KKPE position plus standard FK and removes every IK helper
+Native Studio scene save root-kohola-shared.png
+
+[root-kohola-shared]
+PASS
+Studio ready, Unity 5.6.2f1, game 1.0
+GIN IKTHIS absent at startup
+Translated-root scene opens without IKTHIS
+Only the item remains; KKPE resolves the serialized Bone Position track
+Scrubbing moves the root while the baked tip stays planted; displacement 0.022, tip error 3.81656E-07
+Natural playback animates bone translation and standard FK together; maximum tip error 0.0009494545
+
+[fk-mixed]
+PASS
+Studio ready, Unity 5.6.2f1, game 1.0
+IKTHIS real Option button registered
+Rope This 1.1.3 real Option button present independently
+Timeline native tracks ready 1.5.6.0
+Creature - Koholasaurus resolved by Sideloader
+Creature - Koholasaurus real FK prefab
+The rollback baseline auto assigns the four limbs
+Eight IK markers and a live native neck FK sphere coexist; IK-owned bone sphere is hidden
+Switching to a red guide keeps native free FK spheres clickable
+Native neck FK selection activates rotation axes without losing IK markers
+Rotating the unassigned neck leaves the registered limb live
+Disabling a rig releases its bones to native FK immediately
+Re-enabling the rig hides only its driven FK guides again
+Finalizing the IK leaves independent native FK keys untouched
+Native Studio scene save fk-mixed-shared.png
+
+[fk-mixed-shared]
+PASS
+Studio ready, Unity 5.6.2f1, game 1.0
+GIN IKTHIS absent at startup
+Mixed FK/IK animation opens without IKTHIS
+Original independent FK track survives without any IK helper objects
+Standard Timeline animates the independent neck
+
+[kohola]
+PASS
+Studio ready, Unity 5.6.2f1, game 1.0
+IKTHIS real Option button registered
+Rope This 1.1.3 real Option button present independently
+Timeline native tracks ready 1.5.6.0
+Creature - Koholasaurus resolved by Sideloader
+Creature - Koholasaurus real FK prefab
+Koholasaurus auto assigns all four legs
+Five live Koholasaurus parts with initial keys
+One collapsed item-child group owns all ten guides
+No top-level guide or folder entries
+Native Studio scene save kohola-scene.png
+All ten markers render in rotation mode with panel closed
+
+[kohola-reload]
+PASS
+Studio ready, Unity 5.6.2f1, game 1.0
+IKTHIS real Option button registered
+Rope This 1.1.3 real Option button present independently
+Timeline native tracks ready 1.5.6.0
+Koholasaurus scene reloads
+Five live Koholasaurus parts with initial keys
+One collapsed item-child group owns all ten guides
+No top-level guide or folder entries
+All ten markers render in rotation mode with panel closed
+Studio drag events move the blue dot and record its optional position key
+
+[workflow]
+PASS
+Studio ready, Unity 5.6.2f1, game 1.0
+IKTHIS real Option button registered
+Rope This 1.1.3 real Option button present independently
+Timeline native tracks ready 1.5.6.0
+Hilichurl resolved by Sideloader
+Hilichurl real FK prefab
+Rifthound resolved by Sideloader
+Rifthound real FK prefab
+Manual preview creates zero keys
+Manual confirm creates exactly two guides and three channels
+Manual channel has one key at 0:00 and no FK track
+Manual channel has one key at 0:00 and no FK track
+Manual channel has one key at 0:00 and no FK track
+Re-registering the same disabled mapping cannot duplicate guides or keys
+Selecting item displays clickable IK guides with the panel closed and suppresses overlapping FK spheres (panel=False visibility=True/True sphere=False/False FK=False)
+Direct blue sphere click selects native move axes and keeps sibling guides visible
+Unchanged drag writes no keys
+Automatic keying is opt-in
+Two blue drags at the same cursor produce one position key and no keys on other channels
+Red rotation drag keys only rotation
+Switching items hides previous guides and restores its ordinary FK spheres
+Native Studio scene save sharing-editable.png
+Finalization refuses paused unbaked parts without changing guides or tracks
+A conflict on the second item leaves the first item and all guides unchanged
+Clean share removes owned guides, keys and sync across both items while preserving unrelated objects
+Clean share preserves the cursor
+Sparse bake kept 31 keys across 8 tracks; dense baseline 2408
+Reduced native tracks agree with live poses, maximum error 0.0007932929
+Native Studio scene save shared.png
+Share save contains no IKTHIS extended scene data
+
+[shared]
+PASS
+Studio ready, Unity 5.6.2f1, game 1.0
+GIN IKTHIS absent at startup
+Baked scene loads without IKTHIS
+Native FK remains enabled without IKTHIS
+Shared scene has no IKTHIS guides; unrelated folder retained
+Unrelated Timeline animation retained in share copy
+Native positions match live IK at 11 sampled times without IKTHIS guides, error 0.0001529351
+Second item's Timeline FK also survives clean share
+Natural Timeline playback drives standard FK, max error 0.03956468 degrees
+
+[main]
+PASS
+Studio ready, Unity 5.6.2f1, game 1.0
+IKTHIS real Option button registered
+Rope This 1.1.3 real Option button present independently
+Timeline native tracks ready 1.5.6.0
+Hilichurl resolved by Sideloader
+Hilichurl real FK prefab
+Rifthound resolved by Sideloader
+Rifthound real FK prefab
+Geovishap Hatchling resolved by Sideloader
+Geovishap Hatchling real FK prefab
+Rope This callback opens only Rope This
+IKTHIS Option callback opens the selected FK item (shown=True, message=骨の割り当て方法を選んでください。)
+IKTHIS callback leaves Rope This closed
+Auto preview leaves pose, guides and Timeline unchanged
+Hilichurl automatic arm/leg candidates 4/4
+Rifthound automatic fore/hind candidates 4/4
+Confirm preserves visible pose and cursor at 0.72 seconds
+0:00 red position/rotation and blue position keys inserted
+Reassignment reuses red/blue tracks and preserves existing keys on both items
+Overlapping active FK bone rejected
+Active NodesConstraints rotation on the knee prevents re-enabling that part
+Existing active FinalIK LimbIK rejects the same bones
+Failed confirmation rolls back staged guides, mapping and keys
+Partial native key transaction rolled back
+Waist translation keeps reachable foot planted; error 1.893386E-06 world units
+Red guide controls the tip rotation
+Manual mode makes the actual FK sphere collider available with FK initially off
+Foreign bone click leaves the manual step unchanged
+Invalid middle leaves the manual step unchanged
+Native FK guide clicks create only a preview
+Fourth click resets the draft and keeps confirmed parts
+Five-joint tail includes unselected FK bones and two ordered blue guides
+Two blue guides shape the tail with fixed bone lengths; target error 1.287033E-06, length error 3.72529E-08
+Unreachable red guide clamps at total chain reach with the root fixed
+Nearly extended tail still reaches red with crossed blue goals
+Current cursor key inserted at one second
+Native Studio scene save editing.png
+Bake stops only the selected item's live rigs
+Bake preserves cursor and another item's track
+Bake emits 31 standard item position keys for waist
+Baked standard tracks match live IK at 11 sampled times; max error 2.230202E-07
+Existing native bake keys protected without explicit overwrite
+Native Studio scene save baked.png
+Explicit 60 fps overwrite replaces only interval keys and preserves keys outside
+Golden Wolflord resolved by Sideloader
+Golden Wolflord real FK prefab
+Golden Wolflord custom names require manual assignment
+Custom-name item resets on the fourth FK click
+Golden Wolflord custom FK chain confirmed
+
+[reload]
+PASS
+Studio ready, Unity 5.6.2f1, game 1.0
+IKTHIS real Option button registered
+Rope This 1.1.3 real Option button present independently
+Timeline native tracks ready 1.5.6.0
+Fresh process opens editing scene
+10 live rigs, all native guide tracks and initial keys restored
+Reloaded live waist/foot result
+Native item-only duplication clones the five mapped parts
+Duplicate owns its own guide/keys 腰
+Duplicate owns its own guide/keys 右脚・後脚
+Duplicate owns its own guide/keys 左脚・後脚
+Duplicate owns its own guide/keys 右腕・前脚
+Duplicate owns its own guide/keys 左腕・前脚
+Native scene import
+Import adds 10 distinct rigs without rebinding existing tracks
+
+[independent]
+PASS
+Studio ready, Unity 5.6.2f1, game 1.0
+GIN IKTHIS absent at startup
+Baked scene loads without IKTHIS
+Native FK remains enabled without IKTHIS
+Native positions match live IK at 11 sampled times without IKTHIS guides, error 2.230202E-07
+Natural Timeline playback drives standard FK, max error 0.05595291 degrees
+
+[offline]
+PASS
+No Timeline installed. Editing runs, the red guide reaches its target, and the scene saves with initial keys pending.
+
+[recover]
+PASS
+Studio ready, Unity 5.6.2f1, game 1.0
+IKTHIS real Option button registered
+Rope This 1.1.3 real Option button present independently
+Timeline native tracks ready 1.5.6.0
+Offline scene accepted with Timeline installed
+Offline rig restored with its pending initial-key status
+Missing 0:00 guide keys added after enabling Timeline without moving cursor
+
+[v1-ui]
+PASS
+Studio ready, Unity 5.6.2f1, game 1.0
+IKTHIS real Option button registered
+Rope This 1.1.3 real Option button present independently
+Timeline native tracks ready 1.5.6.0
+The two-item UI fixture loads
+The V1 settings panel starts closed
+Physical Option, workspace and quality-grid clicks display both active items and Compact reduction
+
+[user-ui]
+PASS
+Studio ready, Unity 5.6.2f1, game 1.0
+IKTHIS real Option button registered
+Rope This 1.1.3 real Option button present independently
+Timeline native tracks ready 1.5.6.0
+The user's scene loads for the physical UI check
+Physical IKTHIS UI clicks bake the selected item and then finalize the linked scene for sharing
+The physical UI workflow preserves the five original links and attaches the hands to the head
+Native Studio scene save user-ui-shared.png

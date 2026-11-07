@@ -1,0 +1,8 @@
+bin/
+dist/
+__pycache__/
+*.pyc
+tests/studio/
+tests/bin/
+tests/runtime/
+tests/user-bake-fixture/
